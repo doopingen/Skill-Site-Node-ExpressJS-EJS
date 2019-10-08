@@ -12,14 +12,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<header>
+    <% include ./partials/header %>
+</header>
 <body>
     <p>Skills test</p>
     <% for(var i = 0 ; i < myJS.length ; i++) { %>
-        <tr>
-             <td><%= myJS[i] %></td>
-        </tr>
+        <ul>
+             <li><%= myJS[i] %></li>
+        </ul>
     <% } %>
-
-    
 </body>
+<footer>
+    <% include ./partials/footer %>
+</footer>
 </html>

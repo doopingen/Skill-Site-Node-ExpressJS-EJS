@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+<header>
+    <% include ./partials/header %>
+</header>
 <body>
     <p>Contact page test</p>
     <% const person = {
@@ -14,7 +17,10 @@
         email: 'clay@darland.info',
         github: 'doopingen',
     } %>
-    
+
     <%= person.fname %>
 </body>
+<footer>
+    <% include ./partials/footer %>
+</footer>
 </html>
