@@ -1,0 +1,23 @@
+{
+  "name": "skill_site_boilerplate",
+  "version": "1.0.0",
+  "description": "This is a skill site that was constructed as a boilerplate. This site uses Node.js with ExpressJS as a framework with EJS as a view engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doopingen/Skill-Site-Node-ExpressJS-EJS.git"
+  },
+  "author": "Clay Darland",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doopingen/Skill-Site-Node-ExpressJS-EJS/issues"
+  },
+  "homepage": "https://github.com/doopingen/Skill-Site-Node-ExpressJS-EJS#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1"
+  }
+}

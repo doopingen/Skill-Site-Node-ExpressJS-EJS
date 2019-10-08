@@ -1,0 +1,25 @@
+<% const myJS = ['ExpressJS', 'ES5', 'ES6', 'NodeJS',  ]; %> 
+
+<% const myCSS = ['Bootstrap', 'Materialize', 'UIKIT']; %>
+
+<% const myHTML = ['HTML5', 'HTML5 Canvas', ]; %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p>Skills test</p>
+    <% for(var i = 0 ; i < myJS.length ; i++) { %>
+        <tr>
+             <td><%= myJS[i] %></td>
+        </tr>
+    <% } %>
+
+    
+</body>
+</html>
