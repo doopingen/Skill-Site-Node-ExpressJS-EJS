@@ -11,9 +11,6 @@ app.set('view engine', 'ejs');
 app.set('views', './views');
 
 //Serve static stylesheet middleware 
-// app.use(express.static('./public'));//Skill-Site-Node-ExpressJS-EJS/public/images
-// app.use(express.static('./public/stylesheets'));
-
 app.use("/images", express.static(__dirname + '/public/images'));
 app.use("/css", express.static(__dirname + '/public/stylesheets'));
 
