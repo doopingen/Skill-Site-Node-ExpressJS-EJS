@@ -1,9 +1,3 @@
-<% const myJS = ['ExpressJS', 'ES5', 'ES6', 'NodeJS',  ]; %> 
-
-<% const myCSS = ['Bootstrap', 'Materialize', 'UIKIT']; %>
-
-<% const myHTML = ['HTML5', 'HTML5 Canvas', ]; %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +14,16 @@
     <% for(var i = 0 ; i < myJS.length ; i++) { %>
         <ul>
              <li><%= myJS[i] %></li>
+        </ul>
+    <% } %>
+    <% for(var i = 0 ; i < myCSS.length ; i++) { %>
+        <ul>
+             <li><%= myCSS[i] %></li>
+        </ul>
+    <% } %>
+    <% for(var i = 0 ; i < myHTML.length ; i++) { %>
+        <ul>
+             <li><%= myHTML[i] %></li>
         </ul>
     <% } %>
 </body>

@@ -1,15 +1,23 @@
-module.exports = function(app){
+const express = require('express');
+const router = express.Router();
 
-    //ES6 arrow function test
-    app.get('/', (req, res) => res.render('index'));
+router.get('/', (req, res) => res.render('index'));
 
-    app.get('/contact', function(req, res) {
-        res.render('contact');
+router.get('/contact', function(req, res) {
+    res.render('contact', {
+        fname: 'Clay',
+        lname: 'Darland',
+        email: 'clay@darland.info',
+        github: 'doopingen',
     });
+});
 
-    app.get('/skills', function(req, res) {
-        res.render('skills');
+router.get('/skills', function(req, res) {  
+    res.render('skills', {
+        myJS: ['ExpressJS', 'ES5', 'ES6', 'NodeJS' ],
+        myCSS: ['Bootstrap', 'Materialize', 'UIKIT'],
+        myHTML: ['HTML5', 'HTML5 Canvas' ]
     });
+});
 
-    //other routes TBD..
-}
+module.exports = router;

@@ -11,15 +11,9 @@
 </header>
 <body>
     <p>Contact page test</p>
-    <% const person = {
-        fname: 'Clay',
-        lname: 'Darland',
-        email: 'clay@darland.info',
-        github: 'doopingen',
-    } %>
-    <H3>Name: &nbsp; <%= person.fname %> <%= person.lname %> </h3>
-    <h4>Email: &nbsp; <%= person.email %></h4>
-    <h4>Github: &nbsp; <%= person.github %></h4>
+    <H3>Name: &nbsp; <%= fname %> <%= lname %> </h3>
+    <h4>Email: &nbsp; <%= email %></h4>
+    <h4>Github: &nbsp; <%= github %></h4>
 </body>
 <footer>
     <% include ./partials/footer %>
